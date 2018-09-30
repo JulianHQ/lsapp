@@ -9,7 +9,11 @@
   <h1>{{ $post->title }}</h1>
 
   <div class="">
-    {{ $post->body }}
+    {{-- This wouldn't parse the HTML --}}
+    {{-- {{ $post->body }} --}}
+
+    {{-- So that it actually parse the HTML --}}
+    {!! $post->body !!}
   </div>
 
   <hr />

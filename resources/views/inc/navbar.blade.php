@@ -18,9 +18,14 @@
         <a class="nav-link" href="/posts">Blog</a>
       </li>
     </ul>
-    <form class="form-inline mt-2 mt-md-0">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="/posts/create" class="nav-link">Create Post</a>
+      </li>
+    </ul>
+    {{-- <form class="form-inline mt-2 mt-md-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> --}}
   </div>
 </nav>
