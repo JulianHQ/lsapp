@@ -19,6 +19,9 @@ Route::get('/welcome', function() {
   return view('welcome');
 });
 
+// Will create Routes for the CRUD functionality @PostsController
+Route::resource('posts', 'PostsController');
+
 // Route::get('/users/{id}/{name}', function($id, $name) {
 //   return "The user is: $id ($name)";
 // });
