@@ -1,4 +1,4 @@
-@extends('layouts.mylayout')
+@extends('layouts.app')
 
 @section('content')
   <a href="/posts" class="btn btn-secondary">Go back</a>
