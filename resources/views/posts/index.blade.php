@@ -11,7 +11,10 @@
         </a>
       </h3>
 
-      <small>Written on {{ $post->created_at }}</small>
+      <small>
+        Written on {{ $post->created_at }}
+        by {{ $post->user->name }}
+      </small>
     </div>
   @empty
     <p>No posts found!</p>
