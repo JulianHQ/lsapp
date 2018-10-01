@@ -3,7 +3,7 @@
 @section('content')
   <h1>Edit Post</h1>
 
-  {!! Form::open(['action' => ['PostsController@update', $post->id], 'method' => 'POST']) !!}
+  {!! Form::open(['action' => ['PostsController@update', $post->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     {{-- Spoot the method PUT using Laravel --}}
     {{ Form::hidden('_method', 'PUT') }}
 
@@ -24,6 +24,10 @@
         'class'       => 'form-control',
         'placeholder' => 'Body of the post'
       ]) }}
+    </div>
+
+    <div class="form-group">
+      {{ Form::file('cover_image') }}
     </div>
 
     {{ Form::submit('Submit', ['class' => 'btn btn-primary']) }}
